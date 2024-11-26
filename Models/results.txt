@@ -114,6 +114,32 @@ F1 Score: 0.8444
 
 
 
+Training and Testing dataset: tweets_dataset.csv
+X_train.shape: (2249, 1000)
+X_test.shape: (563, 1000)
+y_train.shape: (2249,)
+y_test.shape: (563,)
+Number of features used by TfidfVectorizer: 1000
+
+Cross-Validation Scores: [0.91777778 0.86666667 0.86666667 0.87555556 0.86636971]
+Mean Accuracy: 0.8786 ± 0.0199
+Time taken: 1.1211111545562744
+
+SVM Results:
+Accuracy: 0.8686
+Precision: 0.8750
+Recall: 0.8561
+F1 Score: 0.8655
+
+
+XGBoost Results:
+Accuracy: 0.8455
+Precision: 0.8930
+Recall: 0.7806
+F1 Score: 0.8330
+
+
+
 Cross-Validation Scores: [0.97592778 0.9742561  0.97993982 0.97659646 0.97491639]
 Mean Accuracy: 0.9763 ± 0.0020
 Time taken: 252.02256274223328
@@ -167,6 +193,9 @@ Accuracy: 0.9465
 Precision: 0.9641
 Recall: 0.9511
 F1 Score: 0.9575
+
+
+
 
 
 
