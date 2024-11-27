@@ -140,6 +140,72 @@ F1 Score: 0.8330
 
 
 
+Training dataset: tweets_dataset.csv
+X_train.shape: (2249, 100)
+X_test.shape: (563, 100)
+y_train.shape: (2249,)
+y_test.shape: (563,)
+Number of features used by TfidfVectorizer: 100
+
+Testing dataset: tweets_dataset.csv
+X_train.shape: (2249, 100)
+X_test.shape: (563, 100)
+y_train.shape: (2249,)
+y_test.shape: (563,)
+Number of features used by TfidfVectorizer: 100
+
+Cross-Validation Scores: [0.80444444 0.76       0.77777778 0.79555556 0.76391982]
+Mean Accuracy: 0.7803 ± 0.0173
+Time taken: 0.7904515266418457
+
+SVM Results:
+Accuracy: 0.7602
+Precision: 0.7619
+Recall: 0.7482
+F1 Score: 0.7550
+
+
+XGBoost Results:
+Accuracy: 0.7762
+Precision: 0.7794
+Recall: 0.7626
+F1 Score: 0.7709
+
+
+
+Training dataset: tweets_dataset.csv
+X_train.shape: (2249, 5000)
+X_test.shape: (563, 5000)
+y_train.shape: (2249,)
+y_test.shape: (563,)
+Number of features used by TfidfVectorizer: 5000
+
+Testing dataset: tweets_dataset.csv
+X_train.shape: (2249, 5000)
+X_test.shape: (563, 5000)
+y_train.shape: (2249,)
+y_test.shape: (563,)
+Number of features used by TfidfVectorizer: 5000
+
+Cross-Validation Scores: [0.93555556 0.89777778 0.89111111 0.90666667 0.91982183]
+Mean Accuracy: 0.9102 ± 0.0159
+Time taken: 2.299163341522217
+
+SVM Results:
+Accuracy: 0.9076
+Precision: 0.9007
+Recall: 0.9137
+F1 Score: 0.9071
+
+
+XGBoost Results:
+Accuracy: 0.8455
+Precision: 0.8775
+Recall: 0.7986
+F1 Score: 0.8362
+
+
+
 Cross-Validation Scores: [0.97592778 0.9742561  0.97993982 0.97659646 0.97491639]
 Mean Accuracy: 0.9763 ± 0.0020
 Time taken: 252.02256274223328
@@ -196,6 +262,73 @@ F1 Score: 0.9575
 
 
 
+
+
+Training dataset: articles_dataset.csv
+X_train.shape: (12704, 10000)
+X_test.shape: (3177, 10000)
+y_train.shape: (12704,)
+y_test.shape: (3177,)
+Number of features used by TfidfVectorizer: 10000
+
+Testing dataset: tweets_dataset.csv
+X_train.shape: (2249, 10000)
+X_test.shape: (563, 10000)
+y_train.shape: (2249,)
+y_test.shape: (563,)
+Number of features used by TfidfVectorizer: 10000
+
+Cross-Validation Scores: [0.99409681 0.98976781 0.99173554 0.99134199 0.99291339]
+Mean Accuracy: 0.9920 ± 0.0015
+Time taken: 101.92113590240479
+
+SVM Results:
+Accuracy: 0.5595
+Precision: 0.5524
+Recall: 0.5683
+F1 Score: 0.5603
+
+
+XGBoost Results:
+Accuracy: 0.5080
+Precision: 0.5060
+Recall: 0.1511
+F1 Score: 0.2327
+
+
+
+Training dataset: tweets_dataset.csv
+X_train.shape: (2249, 10000)
+X_test.shape: (563, 10000)
+y_train.shape: (2249,)
+y_test.shape: (563,)
+Number of features used by TfidfVectorizer: 10000
+
+Testing dataset: articles_dataset.csv
+X_train.shape: (12704, 10000)
+X_test.shape: (3177, 10000)
+y_train.shape: (12704,)
+y_test.shape: (3177,)
+Number of features used by TfidfVectorizer: 10000
+
+Cross-Validation Scores: [0.93777778 0.9        0.89111111 0.90888889 0.91536748]
+Mean Accuracy: 0.9106 ± 0.0159
+Time taken: 3.483640432357788
+
+SVM Results:
+Accuracy: 0.4646
+Precision: 0.6615
+Recall: 0.3890
+F1 Score: 0.4900
+Time taken: 2.141832113265991
+
+
+XGBoost Results:
+Accuracy: 0.4684
+Precision: 0.7005
+Recall: 0.3419
+F1 Score: 0.4595
+Time taken: 0.9452862739562988
 
 
 
