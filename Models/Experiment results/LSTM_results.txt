@@ -1,0 +1,20 @@
+trained and tested on only articles: 
+accuracy: 0.6702328508495909, precision: 0.6702328508495909, recall: 1.0, f1: 0.8025621703089676
+
+
+trained on articles, tested on tweets:
+accuracy: 0.4929078014184397, precision: 0.4929078014184397, recall: 1.0, f1: 0.6603325415676959
+
+
+
+trained on tweets, tested on articles:
+accuracy: 0.6626809314033983, precision: 0.6692258477287268, recall: 0.9821596244131455, f1: 0.7960426179604262
+
+
+
+trained and tested on only tweets:
+accuracy: 0.45390070921985815, precision: 0.45390070921985815, recall: 1.0, f1: 0.624390243902439 
+
+
+trained on combination, tested on combination:
+accuracy: 0.6358288770053476, precision: 0.6358288770053476, recall: 1.0, f1: 0.7773782281791436
