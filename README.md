@@ -9,7 +9,8 @@ This repository explores the
 Run the following to setup the conda environment and install the requirements:
 <pre>
 <code>
-
+git clone https://github.com/your_username/arabic-fake-news.git
+cd arabic-fake-news
 </code>
 <button onclick="copyToClipboard(this.previousElementSibling.innerText)"></button>
 </pre>
