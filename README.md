@@ -15,7 +15,7 @@ cd arabic-fake-news
 <button onclick="copyToClipboard(this.previousElementSibling.innerText)"></button>
 </pre>
 
-## Usage 
+<!--## Usage 
 To Run the experiments please run the following code, 
 - 
 
@@ -24,9 +24,7 @@ To Run the experiments please run the following code,
 
 </code>
 <button onclick="copyToClipboard(this.previousElementSibling.innerText)"></button>
-</pre>
-
-
+</pre> -->
 
 
 ## Experiments
