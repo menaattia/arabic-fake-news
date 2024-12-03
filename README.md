@@ -2,7 +2,7 @@
 
 This is the repository of our NLP701 course project at MBZUAI.
 
-This repository explores the 
+This repository contains the implementation and experiments for detecting fake news in Arabic. The focus is on understanding the characteristics of fake news and developing models to effectively differentiate between fake and real news, leveraging diverse datasets such as satirical articles, BBC news, and COVID-19 tweets.
 
 
 ## Installation
