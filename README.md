@@ -18,7 +18,7 @@ cd arabic-fake-news
 
 ### Installing Requirements
 
-All dependencies used in the project are listed in the `requirements.txt` file and can be installed using the terminal command `pip install <package-name>`.
+All dependencies used in the project are listed in the `requirements.txt` file and can be installed using the terminal command `pip install -r requirements.txt`.
 
 <!--## Usage
 To Run the experiments please run the following code,
