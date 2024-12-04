@@ -6,7 +6,7 @@ This repository contains the implementation and experiments for detecting fake n
 
 ## Installation
 
-Run the following to setup the conda environment and install the requirements:
+Run the following to clone this repository:
 
 <pre>
 <code>
@@ -15,6 +15,10 @@ cd arabic-fake-news
 </code>
 <button onclick="copyToClipboard(this.previousElementSibling.innerText)"></button>
 </pre>
+
+### Installing Requirements
+
+All dependencies used in the project are listed in the `requirements.txt` file and can be installed using the terminal command `pip install <package-name>`.
 
 <!--## Usage
 To Run the experiments please run the following code,
@@ -27,7 +31,7 @@ To Run the experiments please run the following code,
 <button onclick="copyToClipboard(this.previousElementSibling.innerText)"></button>
 </pre> -->
 
-## Experiments
+<!-- ## Experiments
 
 For our paper, we ran the following experiments with each model (SVM, XGBoost, LSTM, and CNN) to perform consistent comparisons
 
@@ -37,29 +41,55 @@ For our paper, we ran the following experiments with each model (SVM, XGBoost, L
 | Articles | Tweets   |
 | Tweets   | Tweets   |
 | Tweets   | Articles |
-| Both     | Both     |
+| Both     | Both     | -->
+
+## Codebase
+
+- `Comparative_text_Analysis` contains the python notebook involving all the analysis done in our report related to the topics of the text in the datasets, and the associated graphs and figures.
+- `dataset_preprocessing` contains the code for preprocessing the tweets and articles in the two seperate folders, as well as the code for combining them into one dataset in `combine_final_datasets.ipynb`.
+- `final_datasets` contains the three final preprocessed datasets that were used in our experiments: `articles_dataset.csv`, `combined_dataset.csv`, `tweets_dataset.csv`. In training the different models, a random state of 42 was used to ensure a consistent train-test split across models.
+- `Models` contains the `Experiment results` folder which includes .txt files of the results outputted by the different models. Additionally, it contains the implementations of the four different models we trained:
+
+  1. `lstm.ipynb` contains code related to the LSTM deep learning model.
+  2. `CNN_Fake_news.ipynb` contains code related to the CNN deep learning model.
+  3. `Machine_Learning_Models.ipynb` contains code for the SVM and XGBoost machine learning models.
+     Additionally, `testing_features_hyperparameter` and `Machine_Learning_Models_grid_search.ipynb` are related to tuning the hyperparameters of the SVM and XGBoost models.
+
+## Datasets
+
+- The ArCOV-19 Rumors dataset that we used (before preprocessing) can be found in the `Tweets.txt` file found [here.](https://gitlab.com/bigirqu/ArCOV-19/-/tree/master/ArCOV19-Rumors/tweet_verification?ref_type=heads)
+- The Satirical fake news dataset GitHub repo can be found [here.](https://github.com/sadanyh/Arabic-Satirical-Fake-News-Dataset)
+- The BBC and CNN data came from [this]() dataset.
 
 ## Acknowledgements
 
-A large part of the idea was inspired by Saadany's [ _Fake or Real? A Study of Arabic Satirical Fake News_](https://aclanthology.org/2020.rdsm-1.7/). Many thanks for their wonderful work.
+Our project idea was motivated by Saadany et al's [ _Fake or Real? A Study of Arabic Satirical Fake News_](https://aclanthology.org/2020.rdsm-1.7/). Many thanks for their wonderful work.
+
+## References
 
 <pre>
-<code>
-@inproceedings{saadany-etal-2020-fake,
-    title = "Fake or Real? A Study of {A}rabic Satirical Fake News",
-    author = "Saadany, Hadeel  and
-      Orasan, Constantin  and
-      Mohamed, Emad",
-    editor = "Aker, Ahmet  and
-      Zubiaga, Arkaitz",
-    booktitle = "Proceedings of the 3rd International Workshop on Rumours and Deception in Social Media (RDSM)",
-    month = dec,
-    year = "2020",
-    address = "Barcelona, Spain (Online)",
+<!-- <code> -->
+@inproceedings{saadany2020fake, title={Fake or Real? A Study of Arabic Satirical Fake News},
+author={Saadany, Hadeel and Orasan, Constantin and Mohamed, Emad},
+booktitle={Proceedings of the 3rd International Workshop on Rumours and Deception in Social Media (RDSM)},
+pages={70--80},
+year={2020} }
+
+
+@inproceedings{covid_tweets,
+    title = "{A}r{COV}19-Rumors: {A}rabic {COVID}-19 {T}witter Dataset for Misinformation Detection",
+    author = "Haouari, Fatima  and
+      Hasanain, Maram  and
+      Suwaileh, Reem  and
+      Elsayed, Tamer",
+    booktitle = "Proceedings of the Sixth Arabic Natural Language Processing Workshop",
+    month = apr,
+    year = "2021",
+    address = "Kyiv, Ukraine (Virtual)",
     publisher = "Association for Computational Linguistics",
-    url = "https://aclanthology.org/2020.rdsm-1.7",
-    pages = "70--80",
-    abstract = "One very common type of fake news is satire which comes in a form of a news website or an online platform that parodies reputable real news agencies to create a sarcastic version of reality. This type of fake news is often disseminated by individuals on their online platforms as it has a much stronger effect in delivering criticism than through a straightforward message. However, when the satirical text is disseminated via social media without mention of its source, it can be mistaken for real news. This study conducts several exploratory analyses to identify the linguistic properties of Arabic fake news with satirical content. It shows that although it parodies real news, Arabic satirical news has distinguishing features on the lexico-grammatical level. We exploit these features to build a number of machine learning models capable of identifying satirical fake news with an accuracy of up to 98.6{\%}. The study introduces a new dataset (3185 articles) scraped from two Arabic satirical news websites ({`}Al-Hudood{'} and {`}Al-Ahram Al-Mexici{'}) which consists of fake news. The real news dataset consists of 3710 articles collected from three official news sites: the {`}BBC-Arabic{'}, the {`}CNN-Arabic{'} and {`}Al-Jazeera news{'}. Both datasets are concerned with political issues related to the Middle East.",
+    url = "https://aclanthology.org/2021.wanlp-1.8",
+    pages = "72--81",
 }
-</code>
+
+<!-- </code> -->
 </pre>
