@@ -59,7 +59,7 @@ For our paper, we ran the following experiments with each model (SVM, XGBoost, L
 
 - The ArCOV-19 Rumors dataset that we used (before preprocessing) can be found in the `Tweets.txt` file found [here.](https://gitlab.com/bigirqu/ArCOV-19/-/tree/master/ArCOV19-Rumors/tweet_verification?ref_type=heads)
 - The Satirical fake news dataset GitHub repo can be found [here.](https://github.com/sadanyh/Arabic-Satirical-Fake-News-Dataset)
-- The BBC and CNN data came from [this]() dataset.
+- The BBC and CNN data came from [this](https://sourceforge.net/projects/ar-text-mining/files/Arabic-Corpora/) dataset.
 
 ## Acknowledgements
 
