@@ -4,9 +4,10 @@ This is the repository of our NLP701 course project at MBZUAI.
 
 This repository contains the implementation and experiments for detecting fake news in Arabic. The focus is on understanding the characteristics of fake news and developing models to effectively differentiate between fake and real news, leveraging diverse datasets such as satirical articles, BBC news, and COVID-19 tweets.
 
-
 ## Installation
+
 Run the following to setup the conda environment and install the requirements:
+
 <pre>
 <code>
 git clone https://github.com/your_username/arabic-fake-news.git
@@ -15,9 +16,9 @@ cd arabic-fake-news
 <button onclick="copyToClipboard(this.previousElementSibling.innerText)"></button>
 </pre>
 
-<!--## Usage 
-To Run the experiments please run the following code, 
-- 
+<!--## Usage
+To Run the experiments please run the following code,
+-
 
 <pre>
 <code>
@@ -26,20 +27,22 @@ To Run the experiments please run the following code,
 <button onclick="copyToClipboard(this.previousElementSibling.innerText)"></button>
 </pre> -->
 
-
 ## Experiments
+
 For our paper, we ran the following experiments with each model (SVM, XGBoost, LSTM, and CNN) to perform consistent comparisons
 
-| Train | Test  | 
-|-----------------|--------------------------|
-| Articles   | Articles  | 
-| Articles   | Tweets    | 
-| Tweets     | Tweets    | 
-| Tweets     | Articles  | 
-
+| Train    | Test     |
+| -------- | -------- |
+| Articles | Articles |
+| Articles | Tweets   |
+| Tweets   | Tweets   |
+| Tweets   | Articles |
+| Both     | Both     |
 
 ## Acknowledgements
+
 A large part of the idea was inspired by Saadany's [ _Fake or Real? A Study of Arabic Satirical Fake News_](https://aclanthology.org/2020.rdsm-1.7/). Many thanks for their wonderful work.
+
 <pre>
 <code>
 @inproceedings{saadany-etal-2020-fake,
