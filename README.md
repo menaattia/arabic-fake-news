@@ -1,4 +1,4 @@
-# Arabic Fake News Detection
+# Cross-Domain Evaluation of Arabic Fake News Detection Models on News Articles and Tweets
 
 This is the repository of our NLP701 course project at MBZUAI.
 
